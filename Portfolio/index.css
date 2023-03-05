@@ -187,7 +187,7 @@ header .list-nav:hover {
   justify-content: space-around;
   text-align: center;
   flex-flow: wrap;
-  height: 90vh;
+  height: 120vh;
   color: white;
   background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5),
