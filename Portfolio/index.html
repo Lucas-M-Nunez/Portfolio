@@ -9,15 +9,13 @@
   <title>Portfolio Lucas M. Nuñez</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
     <div class="container">
-      <p class="logo" data-aos="flip-left">
-        MiPortfolio!
-      </p>
+      <img class="logo" src="" alt="Logo" data-aos="flip-left">
 
       <button class="hamburguer">
         <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -38,11 +36,12 @@
     </div>
   </header>
   <section id="hero">
-    <h1 data-aos="flip-down">
-      Bienvenido <br />
-      a mi <br />
-      Portfolio
-    </h1>
+    <div class="container__img__h1">
+      <h1 data-aos="flip-down">
+        ¡Hola!, Mi nombre es Lucas y soy Desarrollador Web Full Stack Trainee.
+      </h1>
+      <img class="img-hero" src="img/fotocv.jpg" alt="foto" data-aos="fade-right">
+    </div>
   </section>
 
   <section id="Sobremi">
@@ -53,7 +52,7 @@
           <img class="img-sobremi" src="img/fotocv.jpg" alt="foto">
         </div>
         <p class="p" data-aos="fade-up">
-          &#128075; Hola! Soy Lucas Martin Nuñez, Desarrollador Web en
+          &#128075; Hola! Soy Lucas Nuñez, Desarrollador Web en
           constante crecimiento. <br />
           <br />
           &#128092; - Me puedo presentar como una persona comprometida y
@@ -63,15 +62,14 @@
           adquirido en mi formación como Desarrollador.<br />
           <br />
           &#128214; &#128187; - Tengo conocimientos en Java(JPA, JDBC, POO), HTML5, CSS3, Javascript,
-          Bootstrap, React.js, entre otras, se muestran en el
-          apartado de
-          <a href="#Tec-conocidas">Tecnologías</a><br />
+          Bootstrap, React.js. Me desenvuelvo en ambas especialidades tanto Frontend como Backend pero siempre me senti comodo Con la especialidad Backend.
+          <br />
           <br />
           &#127919; - Mi Objetivo son convertirme en Web Developer, con la experiencia a través del tiempo. Obteniendo
           todo el
           conocimiento posible y mejorar cada día!.<br />
-          <br />
           &#128211; - Actualmente sigo estudiando Javascript <br />
+          <br />
           <br />
           &#128211; - Me gustaría aprender mas adelante: Diseño UX / UI o en el Mundo
           Mobile: Flutter &#128241; <br />
@@ -92,16 +90,7 @@
         conocimiento:
       </p>
       <div class="image-container" data-aos="fade-up">
-        <img class="img-tec" src="img/CSS3.png" alt="CSS" />
-        <img class="img-tec" src="img/Html.png" alt="HTML" />
-        <img class="img-tec" src="img/logoJavaScript.png" alt="Javascript" />
-        <img class="img-tec" src="img/logoJava.png" alt="Java" />
-        <img class="img-tec" src="img/spring-boot.png" alt="Spring-boot" />
-        <img class="img-tec" src="img/logo-react.jpg" alt="React.js" />
-        <img class="img-tec" src="img/framework-Bootstrap.png" alt="Bootstrap" />
-        <img class="img-tec" src="img/Node.js_logo.png" alt="Node.js" />
-        <img class="img-tec" src="img/mysql.png" alt="MySQL" />
-        <img class="img-tec" src="img/512px-Git-logo.svg.png" alt="Git" />
+        <!-- <img class="img-tec" src="img/CSS3.png" alt="CSS" /> -->
       </div>
     </div>
   </section>
@@ -109,15 +98,14 @@
   <section id="cursos">
     <div class="container">
       <h2>Carrera y Cursos</h2>
-      <p class="p" data-aos="fade-right">
-        &#127891; Carrera Universitaria: Ingeniería en Sistemas de
-        Información.<br />
-        &#127891; Curso Aplicaciónes Android con App Inventor 2 - Casa del
-        Futuro, Godoy Cruz. <br />
-        &#127891; Curso de Programación Web Full Stack - EGG Academy.<br>
-        &#127891; Desarrollador Java Inicial - Argentina Programa 4.0
-
-      </p>
+      <div>        
+        <!-- <p class="p" data-aos="fade-right">
+           <h4>Carrera Universitaria: Ingeniería en Sistemas de Información.</h4>
+           <h4>Curso Aplicaciónes Android con App Inventor 2 - Casa del Futuro, Godoy Cruz.</h4>
+           <h4>Curso de Programación Web Full Stack - EGG Academy.</h4>
+           <h4>Desarrollador Java Inicial - Argentina Programa 4.0</h4>
+        </p> -->
+      </div>
     </div>
   </section>
 
@@ -141,7 +129,7 @@
             </div>
           </div>
           <div class="card__content">
-            <img class="img-carta" src="img/IMG-tanrico.jpg" alt="Tan-Rico">
+            <img class="img-carta" src="img/SeccionProyectos/IMG-tanrico.jpg" alt="Tan-Rico">
             <h6 class="titulo-card">TAN RICO COMPANY</h6>
             <a class="button-card" href="#Mis-proyectos">Pronto</a>
           </div>
@@ -184,83 +172,6 @@
             <a class="button-card" href="http://page-order-list-lmn.netlify.app" target="_blank">Ir</a>
           </div>
         </div>
-
-        <div class="card" data-aos="zoom-out">
-          <div class="tools">
-            <div class="circle">
-              <span class="red box"></span>
-            </div>
-            <div class="circle">
-              <span class="yellow box"></span>
-            </div>
-            <div class="circle">
-              <span class="green box"></span>
-            </div>
-          </div>
-          <div class="card__content">
-            <img class="img-carta" src="img/logomath.png" alt="Tan-Rico">
-            <h6 class="titulo-card">CALCULADORA SIMPLE</h6>
-            <a class="button-card" href="https://basic-calculator-html-4f4fe6.netlify.app/" target="_blank">Ir</a>
-          </div>
-        </div>
-
-        <div class="card" data-aos="zoom-out">
-          <div class="tools">
-            <div class="circle">
-              <span class="red box"></span>
-            </div>
-            <div class="circle">
-              <span class="yellow box"></span>
-            </div>
-            <div class="circle">
-              <span class="green box"></span>
-            </div>
-          </div>
-          <div class="card__content">
-            <img class="img-carta" src="img/reloj.jpg" alt="Tan-Rico">
-            <h6 class="titulo-card">RELOJ DIGITAL</h6>
-            <a class="button-card" href="http://relojdigitalweb.netlify.app" target="_blank">Ir</a>
-          </div>
-        </div>
-
-        <div class="card" data-aos="zoom-out">
-          <div class="tools">
-            <div class="circle">
-              <span class="red box"></span>
-            </div>
-            <div class="circle">
-              <span class="yellow box"></span>
-            </div>
-            <div class="circle">
-              <span class="green box"></span>
-            </div>
-          </div>
-          <div class="card__content">
-            <img class="img-carta" src="img/calculadora.png" alt="Tan-Rico">
-            <h6 class="titulo-card">CALCULADORA V2.0</h6>
-            <a class="button-card" href="http://projet-calculatorv2.netlify.app" target="_blank">Ir</a>
-          </div>
-        </div>
-
-        <div class="card" data-aos="zoom-out">
-          <div class="tools">
-            <div class="circle">
-              <span class="red box"></span>
-            </div>
-            <div class="circle">
-              <span class="yellow box"></span>
-            </div>
-            <div class="circle">
-              <span class="green box"></span>
-            </div>
-          </div>
-          <div class="card__content">
-            <img class="img-carta" src="img/memorama.jpg" alt="Tan-Rico">
-            <h6 class="titulo-card">JUEGO DE LA MEMORIA</h6>
-            <a class="button-card" href="http://gamememorama.netlify.app" target="_blank">Ir</a>
-          </div>
-        </div>
-
         <!-- ------------- -->
       </div>
     </div>
@@ -334,7 +245,7 @@
     });
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
   <script>
     AOS.init({
       duration: 1000
