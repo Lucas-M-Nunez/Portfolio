@@ -5,17 +5,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/miLogo.png">
   <title>Portafolio Lucas M. Nuñez</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/seccion_tecnologia.css">
+  <link rel="stylesheet" href="css/seccion_proyectos.css">
+  <link rel="stylesheet" href="css/seccion_cursos.css">
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <img class="logo" src="" alt="Logo" data-aos="flip-left">
+    <div class="header__container">
+      <img class="header__logo" src="img/miLogo.png" alt="Mi Logo" data-aos="flip-left">
 
       <button class="hamburguer">
         <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -25,150 +30,147 @@
         </svg>
       </button>
 
-      <nav class="nav">
+      <ul class="nav">
         <a class="list-nav" href="#hero">Inicio</a>
         <a class="list-nav" href="#Sobremi">Sobre mi</a>
-        <a class="list-nav" href="#Tec-conocidas">Tecnologías conocidas</a>
+        <a class="list-nav" href="#Tecnologias">Tecnologías conocidas</a>
         <a class="list-nav" href="#cursos">Estudios</a>
-        <a class="list-nav" href="#Mis-proyectos">Proyectos</a>
-        <a class="list-nav" href="#contactame">Contactame</a>
-      </nav>
+        <a class="list-nav" href="#Misproyectos">Proyectos</a>
+        <a class="list-nav" href="#contacto">Contactame</a>
+      </ul>
     </div>
   </header>
+
   <section id="hero">
-    <div class="container__img__h1">
-      <h1 data-aos="flip-down">
+    <div class="hero__container">
+      <h1 class="container__tittle" data-aos="flip-down">
         ¡Hola!, Mi nombre es Lucas y soy Desarrollador Web Full Stack Trainee.
       </h1>
-      <img class="img-hero" src="img/fotocv.jpg" alt="foto" data-aos="fade-right">
+      <img class="img__hero" src="img/Imagen-cv.jpg" alt="foto mia en Hero" data-aos="fade-right">
     </div>
   </section>
 
   <section id="Sobremi">
     <div class="container">
-      <h2>Sobre Mi</h2>
-      <div class="sobremi-container">
-        <div class="card2" data-aos="fade-right">
-          <img class="img-sobremi" src="img/fotocv.jpg" alt="foto">
+      <h2 class="container__tittle">Sobre Mi</h2>
+      <div class="sobremi__container">
+        <div class="sobremi__container__img" data-aos="fade-right">
+          <img class="sobremi__img" src="img/img-con-fondo.jpg" alt="foto">
         </div>
-        <p class="p" data-aos="fade-up">
-          &#128075; Hola! Soy Lucas Nuñez, Desarrollador Web en
-          constante crecimiento. <br />
-          <br />
-          &#128092; - Me puedo presentar como una persona comprometida y
-          dedicada, con ganas de aprender constantemente cosas nuevas, me
-          desenvuelvo en formas de trabajo colectivas para incentivar el flujo
-          positivo de los proyectos. Aportando todos los conocimientos que he
-          adquirido en mi formación como Desarrollador.<br />
-          <br />
-          &#128214; &#128187; - Tengo conocimientos en Java(JPA, JDBC, POO), HTML5, CSS3, Javascript,
-          Bootstrap, React.js. Me desenvuelvo en ambas especialidades tanto Frontend como Backend pero siempre me senti comodo Con la especialidad Backend.
-          <br />
-          <br />
-          &#127919; - Mi Objetivo son convertirme en Web Developer, con la experiencia a través del tiempo. Obteniendo
-          todo el
-          conocimiento posible y mejorar cada día!.<br />
-          &#128211; - Actualmente sigo estudiando Javascript <br />
-          <br />
-          <br />
-          &#128211; - Me gustaría aprender mas adelante: Diseño UX / UI o en el Mundo
-          Mobile: Flutter &#128241; <br />
-          <br />
+        <div class="container__contenido" data-aos="fade-up">
+          <p>
+            &#128075; Hola! Soy Lucas Nuñez, Desarrollador Web en
+            constante crecimiento.
+          </p>
+          <p>
+            &#128092; - Me puedo presentar como una persona comprometida y
+            dedicada, con ganas de aprender constantemente cosas nuevas, me
+            desenvuelvo en formas de trabajo colectivas para incentivar el flujo
+            positivo de los proyectos. Aportando todos los conocimientos que he
+            adquirido en mi formación como Desarrollador.
+          </p>
+          <p>
+            &#128214; &#128187; - Tengo conocimientos en Java(JPA, JDBC, POO), HTML5, CSS3, Javascript,
+            Bootstrap, React.js. Me desenvuelvo en ambas especialidades tanto Frontend como Backend pero siempre me senti comodo Con la especialidad Backend.
+          </p>
+          <p>
+            &#127919; - Mi Objetivo es convertirme en Web Developer, con la experiencia a través del tiempo. Obteniendo
+            todo el
+            conocimiento posible y mejorar cada día!.
+          </p>
+          <p>
+            &#128211; - Actualmente sigo estudiando Java.
+          </p>
+          <p>
+            &#128211; - Me gustaría especializarme mas adelante: Spring Boot - Java Web. Y por el Frontend, aprender más sobre React.JS.
+          </p>
           &#129309; - ¡Gracias por leer! un cordial saludo.
-        </p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  
 
-  <section id="Tec-conocidas">
-    <div class="container">
-      <h2>Tecnologías</h2>
-      <p data-aos="fade-up">
+  <section id="Tecnologias">
+    <div class="Tecnologias__container">
+      <h2 class="container__tittle">Tecnologías</h2>
+      <h3 class="Tecnologias__subtittle" data-aos="fade-up">
         Esta son algunas de las Tecnologías y frameworks en las que tengo
         conocimiento:
-      </p>
-      <div class="image-container" data-aos="fade-up">
-        <!-- <img class="img-tec" src="img/CSS3.png" alt="CSS" /> -->
+      </h3>
+      <div class="image__container" id="contenedorImagenes" data-aos="fade-up">
+        <!-- 
+          <div class="card">
+            <img class="img__tec" src="img/CSS3.png" alt="CSS3" />
+            <div class="card__content">
+              <p class="card__title">CSS 3</p>
+              <p class="card__description">Cascading Style Sheets -- Hojas de Estilo en Cascada.</p>
+            </div>
+          </div>
+        -->
+
       </div>
     </div>
   </section>
+
 
   <section id="cursos">
-    <div class="container">
-      <h2>Carrera y Cursos</h2>
-      <div>        
-        <!-- <p class="p" data-aos="fade-right">
-           <h4>Carrera Universitaria: Ingeniería en Sistemas de Información.</h4>
-           <h4>Curso Aplicaciónes Android con App Inventor 2 - Casa del Futuro, Godoy Cruz.</h4>
-           <h4>Curso de Programación Web Full Stack - EGG Academy.</h4>
-           <h4>Desarrollador Java Inicial - Argentina Programa 4.0</h4>
-        </p> -->
+    <div class="cursos__container">
+      <h2 class="container__tittle">Carrera y Cursos</h2>
+      <div class="cursos__contenido" id="contenidoCursos">
+        <!-- 
+          <div class="card__cursos">
+            Click me
+          </div> -->
       </div>
     </div>
   </section>
 
-  <section id="Mis-proyectos">
-    <div class="container">
-      <h2>Algunos de Mis Proyectos</h2>
-      <div class="cartas">
-
-        <!-- opcion  de carta -->
+  <section id="Misproyectos">
+    <div class="misproyectos__container">
+      <h2 class="container__tittle">Algunos de Mis Proyectos</h2>
+      <div class="container__cartas" id="container__cartas">
         
-        <div class="card" data-aos="zoom-out">
-          <div class="tools">
-            <div class="circle">
-              <span class="red box"></span>
-            </div>
-            <div class="circle">
-              <span class="yellow box"></span>
-            </div>
-            <div class="circle">
-              <span class="green box"></span>
+        <!-- 
+          <div class="book">
+            <p class= "book__p">Hello</p>
+            <button class="moreInfobtn">
+                <a class="link__proyect" href="#" target="_blank"></a>
+            </button>
+            <div class="cover">
+                <p class="book__p">Hover Me</p>
             </div>
           </div>
-          <div class="card__content">
-            <img class="img-carta" src="img/SeccionProyectos/IMG-tanrico.jpg" alt="Tan-Rico">
-            <h6 class="titulo-card">TAN RICO COMPANY</h6>
-            <a class="button-card" href="#Mis-proyectos">Pronto</a>
-          </div>
-        </div>
-
+        -->
         
-        <!-- insertar con js las diferentes cartas con los proyetos. ------------- -->
       </div>
     </div>
-    </div>
   </section>
-  <section id="contactame" data-aos="fade-right">
-    <div class="container" >
-      <h2>Contactame</h2>
+
+  <section id="contacto">
+    <div class="container__contacto" >
+      <h2 class="container__tittle">Contactame</h2>
 
       <!-- Idea para la parte de Contacto, Realizar un formulario que mande un correo. -->
       <!-- en los logos de las redes, solo dejar Linkedin y Github -->
-      <div class="links">
-        
-        <a class="link" href="https://github.com/Lucas-M-Nunez">
-          <svg class="svg-contac" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
-        </a>
-        <a class="link" href="https://www.linkedin.com/in/lucasmnunez/">
-          <svg class="svg-contac" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-          </svg>
-        </a>
-      </div>
+
+      <form action="" method="post">
+
+      </form>
     </div>
   </section>
   <footer>
-    <div class="copyright">
-      <p>&copy; Hecho por Lucas M. Nuñez</p>
+    <div class="footer__container">
+      <img src="img/miLogo.png" class="footer__logo" alt="">
+      <ul class="nav">
+        <a class="list-nav" href="#hero">Inicio</a>
+        <a class="list-nav" href="#Sobremi">Sobre mi</a>
+        <a class="list-nav" href="#Tecnologias">Tecnologías conocidas</a>
+        <a class="list-nav" href="#cursos">Estudios</a>
+        <a class="list-nav" href="#Misproyectos">Proyectos</a>
+        <a class="list-nav" href="#contacto">Contactame</a>
+      </ul>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -199,7 +201,10 @@
     });
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tecnologia.js"></script>
+  <script src="js/cursos.js"></script>
+  <script src="js/proyectos.js"></script>
   <script>
     AOS.init({
       duration: 1000
