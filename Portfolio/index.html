@@ -155,9 +155,34 @@
       <!-- Idea para la parte de Contacto, Realizar un formulario que mande un correo. -->
       <!-- en los logos de las redes, solo dejar Linkedin y Github -->
 
-      <form action="" method="post">
+      <div class="form__container">
+        <h3 class="form__subtittle">Completa el siguiente formulario para enviarme un correo</h3>
+        <form class="form__content" action="https://formspree.io/f/mayggjej" method="POST">
 
-      </form>
+          <div>
+            <label for="name">Nombre/s</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div>
+            <label for="surname">Apellido/s</label>
+            <input type="text" name="surname" id="surname">
+          </div>
+          <div>
+            <label for="email">Su Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="subject">asunto</label>
+            <input type="text" name="subject" id="subject">
+          </div>
+          <div class="textarea">
+            <label for="comments">Comentarios</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          </div>
+          <input class="btn__enviar" type="submit" value="Enviar">
+        </form>
+
+      </div>
     </div>
   </section>
   <footer>
