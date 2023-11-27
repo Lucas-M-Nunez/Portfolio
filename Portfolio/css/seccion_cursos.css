@@ -1,0 +1,42 @@
+
+:root{
+  --ColorBlack: #363062;
+  --ColorGrey: #4D4C7D;
+  --ColorOrange: #F99417;
+  --Colorwhite: #F5F5F5;
+}
+
+.cursos__contenido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px 30px;
+}
+
+.card__cursos {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid var(--Colorwhite);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: var(--ColorBlack);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+  }
+  
+  .card__cursos:hover {
+    border: 1px solid var(--ColorBlack);
+    transform: scale(1.05);
+  }
+  
