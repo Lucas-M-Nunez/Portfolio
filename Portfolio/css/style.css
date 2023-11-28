@@ -523,4 +523,36 @@ header .header__container {
     font-size: 16px;
     justify-content: center;
   }
+
+  .links__icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links__icons span{
+    width: 200px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Colorwhite);
+  }
+
+  .links__icons a {
+    list-style: none;
+    margin: 20px;
+    transition: all 0.5s;
+  }
+
+  .links__icons a:hover {
+    list-style: none;
+    margin: 20px;
+    transform: scale(1.2);
+  }
+
+  a svg {
+    width: 50px;
+    height: 50px;
+    color: var(--ColorOrange);
+  }
 }
