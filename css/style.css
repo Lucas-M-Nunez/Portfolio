@@ -60,7 +60,7 @@ header .header__container {
 }
 
 .list-nav::before {
-  content: " ";
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -327,12 +327,11 @@ header .header__container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 0;
   border-radius: 20px;
   background-color: var(--ColorOrange);
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
   gap: 50px;
-  margin: 10px 40px;
 }
 
 #contacto .container__contacto {
@@ -438,7 +437,7 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 30px 10px;
-  gap: 25px 0;
+  gap: 0;
   height: 50vh;
 }
 
@@ -536,10 +535,6 @@ a svg {
 
   .container .container__tittle {
     text-align: center;
-  }
-
-  .container__cartas {
-    margin: 30px;
   }
 
   .container__contacto {
@@ -644,6 +639,7 @@ a svg {
   .footer__container {
     height: auto;
     display: flex;
+    gap: 25px 0;
     justify-content: space-around;
   }
 
@@ -739,8 +735,7 @@ a svg {
     position: absolute;
     top: 35%;
     left: 10%;
-    width: 560px;
-    height: 650px;
+    width: 25%;
     border-radius: 10%;
     box-shadow: 1px 16px 18px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 16px 18px 0px rgba(0,0,0,0.75);
@@ -767,10 +762,10 @@ a svg {
   #hero .hero__tittle {
     position: absolute;
     top: 40%;
-    left: 35%;
+    left: 40%;
     padding: 0;
     margin: 0;
-    font-size: 70px;
+    font-size: 50px;
     text-align: start;
     color: var(--Colorwhite);
     width: 40%;
@@ -833,6 +828,7 @@ a svg {
   .misproyectos__container .container__cartas {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     align-items: center;
     justify-content: center;
     padding: 30px 50px;
