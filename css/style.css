@@ -146,6 +146,7 @@ header .header__container {
     #474576,
     #4d4c7d
   );
+  padding: 0;
 }
 
 .list-nav {
@@ -370,6 +371,7 @@ header .header__container {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .form__container .form__subtittle {
@@ -406,6 +408,7 @@ textarea {
 }
 
 #comments {
+  width: 100%;
   max-width: 500px;
   font-size: 17px;
 }
