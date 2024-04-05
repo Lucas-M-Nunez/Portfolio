@@ -209,7 +209,7 @@ header .header__container {
   left: 50%; 
   transform: translate(-50%, -50%); 
   width: 80%; 
-  font-size: 40px; 
+  font-size: 30px; 
   text-align: center;
 }
 
