@@ -947,7 +947,7 @@ a svg {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 50vh;
+    height: 30vh;
   }
 
   .footer__container .nav {
